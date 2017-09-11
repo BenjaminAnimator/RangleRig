@@ -26,7 +26,7 @@ Quick Start Guide
 
 Using a Rangle Rig rig
   
-  -The visibilty and setting for any created rig are current stored under the top node of the rig yourCharacterName_rig in their     respective groups eventually this will be controlled by an animation UI tool
+-The visibilty and setting for any created rig are current stored under the top node of the rig 'yourCharacterName_rig' (eg bob_rig) in their respective groups eventually this will be controlled by an animation UI tool
   
   -Ik Foot roll controls are located on ik foot control
   
