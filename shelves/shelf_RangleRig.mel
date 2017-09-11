@@ -1,0 +1,336 @@
+global proc shelf_RangleRig () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as mc\nimport RangleRig" 
+        -enableBackground 0
+        -align "center" 
+        -label "IRR" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "Import RangleRig" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as mc\nimport RangleRig" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as mc\nreload(RangleRig.rigModules.armRig)\nreload(RangleRig.rigModules.base)\nreload(RangleRig.rigModules.clavicalRig)\nreload(RangleRig.rigModules.handRig)\nreload(RangleRig.rigModules.Ik_leg_test) \nreload(RangleRig.rigModules.legRig)\nreload(RangleRig.rigModules.neckRig)\nreload(RangleRig.rigModules.spineRig)" 
+        -enableBackground 0
+        -align "center" 
+        -label "RRRM" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "RRRM" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as mc\nreload(RangleRig)\nreload(RangleRig.rigModules.armRig)\nreload(RangleRig.rigModules.base)\nreload(RangleRig.rigModules.clavicleRig)\nreload(RangleRig.rigModules.handRig)\nreload(RangleRig.rigModules.legRig)\nreload(RangleRig.rigModules.neckRig)\nreload(RangleRig.rigModules.spineRig)\nreload(RangleRig.Assembler)\nreload(RangleRig.setUpModules.symHumanSetUp)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as mc\nreload(RangleRig.toolkit.assetColourer)\nreload(RangleRig.toolkit.attrLocker)\nreload(RangleRig.toolkit.blndColours)\nreload(RangleRig.toolkit.controlGen)\nreload(RangleRig.toolkit.createStretchy) \nreload(RangleRig.toolkit.jntSegmenter)\nreload(RangleRig.toolkit.objDefine)\nreload(RangleRig.toolkit.objDefine)\nreload(RangleRig.toolkit.selectHirearchy)\nreload(RangleRig.toolkit.setDvrKey)" 
+        -enableBackground 0
+        -align "center" 
+        -label "RRTK" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "RRTK" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as mc\nreload(RangleRig.toolkit.assetColourer)\nreload(RangleRig.toolkit.attrLocker)\nreload(RangleRig.toolkit.blndColours)\nreload(RangleRig.toolkit.controlGen)\nreload(RangleRig.toolkit.createStretchy) \nreload(RangleRig.toolkit.jntSegmenter)\nreload(RangleRig.toolkit.objDefine)\nreload(RangleRig.toolkit.selectHirearchy)\nreload(RangleRig.toolkit.setDvrKey)\nreload(RangleRig.toolkit.pvCalculator)\nreload(RangleRig.toolkit.connectionCreator)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "reload(RangleRig.setUpModules.bodyParts.humanLeg)" 
+        -enableBackground 0
+        -align "center" 
+        -label "RRSetUp" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "RRSetUp" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "reload(RangleRig.setUpModules.bodyParts)\nreload(RangleRig.setUpModules.bodyParts.plantigradeLeg)\nreload(RangleRig.setUpModules.bodyParts.basicHead)\nreload(RangleRig.setUpModules.bodyParts.basicSpine)\nreload(RangleRig.setUpModules.bodyParts.basicArm)\nreload(RangleRig.setUpModules.bodyParts.clavicle)\nreload(RangleRig.setUpModules.symHumanSetUp)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as mc\nreload(RangleRig.userInterface.testUI)\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "RRUI" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "RRUI" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as mc\nreload(RangleRig.userInterface.testUI)\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as mc\nreload(RangleRig.userInterface.AnimationUI)\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "RRAUI" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "RRAUI" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as mc\nreload(RangleRig.userInterface.AnimationUI)\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Display and edit relationships among nodes in your scene graphically using the input and output connection view" 
+        -enableBackground 0
+        -align "center" 
+        -label "Hypergraph: Connections" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hypergraph.png" 
+        -image1 "hypergraph.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "HypergraphDGWindow" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import os\nos.startfile(\"A:/RangleRig_Test Rigs/Mr_Test/scenes/Mr_TEST_ChangeLog.txt\")" 
+        -enableBackground 0
+        -align "center" 
+        -label "ChangeLog" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "CLog" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import os\nos.startfile(\"A:/RangleRig_Test Rigs/Mr_Test/scenes/Mr_TEST_ChangeLog.txt\")" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Toggle local rotation axis visibility" 
+        -enableBackground 0
+        -align "center" 
+        -label "Local Rotation Axes" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "LRA" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconDisplay.png" 
+        -image1 "menuIconDisplay.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ToggleLocalRotationAxes" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as mc\nmc.parent('hips', 'hip_joint')\nmc.parent('chest', 'chest_joint')\nmc.parent('back1', 'ikSpineSegment_1_joint')\nmc.parent('back2', 'ikSpineSegment_2_joint')\nmc.parent('back3', 'ikSpineSegment_3_joint')\n\nmc.parent( 'Up_leg_R_geo', 'Mr_TestR_Upleg_jnt')\nmc.parent('Low_leg_R_geo', 'Mr_TestR_Loleg_jnt')\nmc.parent('Foot_R_geo' ,'Mr_TestR_Ankel_jnt')\nmc.parent( 'Toe_R_geo', 'Mr_TestR_Ball_jnt')\n\nmc.parent( 'Up_leg_L_geo', 'Mr_TestL_Upleg_jnt')\nmc.parent('Low_leg_L_geo', 'Mr_TestL_Loleg_jnt')\nmc.parent('Foot_L_geo' ,'Mr_TestL_Ankel_jnt')\nmc.parent( 'Toe_L_geo', 'Mr_TestL_Ball_jnt')\n\nmc.parent( 'Shoulder_R_geo', 'Mr_TestR_Uparm_jnt')\nmc.parent('Low_arm_R_geo1', 'Mr_TestR_Loarm_jnt')\n\nmc.parent( 'Shoulder_L_geo', 'Mr_TestL_Uparm_jnt')\nmc.parent('Low_arm_L_geo', 'Mr_TestL_Loarm_jnt')\n\nmc.parent( 'head', 'head_jnt')\nmc.parent('neck', 'neck_ik_segSegment_1_joint')\n" 
+        -enableBackground 0
+        -align "center" 
+        -label "ParGeo" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "ParGeo" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as mc\nmc.parent('hips', 'hip_joint')\nmc.parent('chest', 'chest_joint')\nmc.parent('back1', 'ikSpineSegment_1_joint')\nmc.parent('back2', 'ikSpineSegment_2_joint')\nmc.parent('back3', 'ikSpineSegment_3_joint')\n\nmc.parent( 'Up_leg_R_geo', 'R_Upleg_base_jnt')\nmc.parent('Low_leg_R_geo', 'R_Loleg_base_jnt')\nmc.parent('Foot_R_geo' ,'R_Ankle_base_jnt')\nmc.parent( 'Toe_R_geo', 'R_Ball_base_jnt')\n\nmc.parent( 'Up_leg_L_geo', 'L_Upleg_base_jnt')\nmc.parent('Low_leg_L_geo', 'L_Loleg_base_jnt')\nmc.parent('Foot_L_geo' ,'L_Ankle_base_jnt')\nmc.parent( 'Toe_L_geo', 'L_Ball_base_jnt')\n\nmc.parent( 'Shoulder_R_geo', 'R_Uparm_base_jnt')\nmc.parent('Low_arm_R_geo1', 'R_Loarm_base_jnt')\n\nmc.parent( 'Shoulder_L_geo', 'L_Uparm_base_jnt')\nmc.parent('Low_arm_L_geo', 'L_Loarm_base_jnt')\n\nmc.parent( 'head', 'head_jnt')\nmc.parent('neck', 'neck_ik_segSegment_1_joint')\n\nmc.parent('palm_geo_L' ,'L_hand0_jnt')\n\nmc.parent('pinky_L' ,'L_pinky0_anim')\nmc.parent('pinky_L1' ,'L_pinky1_anim')\nmc.parent('pinky_L2' ,'L_pinky2_anim')\n\nmc.parent('ring_L' ,'L_ring0_anim')\nmc.parent('ring_L1' ,'L_ring1_anim')\nmc.parent('ring_L2' ,'L_ring2_anim')\n\nmc.parent('mid_L' ,'L_mid0_anim')\nmc.parent('mid_L1' ,'L_mid1_anim')\nmc.parent('mid_L2' ,'L_mid2_anim')\n\nmc.parent('index_L' ,'L_index0_anim')\nmc.parent('index_L1' ,'L_index1_anim')\nmc.parent('index_L2' ,'L_index2_anim')\n\n\nmc.parent('thumb_L' ,'L_thumb1_anim')\nmc.parent('thumb_L1' ,'L_thumb2_anim')\n\n\nmc.parent('palm_geo_R' ,'R_hand0_jnt')\n\nmc.parent('pinky_R' ,'R_pinky0_anim')\nmc.parent('pinky_R1' ,'R_pinky1_anim')\nmc.parent('pinky_R2' ,'R_pinky2_anim')\n\nmc.parent('ring_R' ,'R_ring0_anim')\nmc.parent('ring_R1' ,'R_ring1_anim')\nmc.parent('ring_R2' ,'R_ring2_anim')\n\nmc.parent('mid_R' ,'R_mid0_anim')\nmc.parent('mid_R1' ,'R_mid1_anim')\nmc.parent('mid_R2' ,'R_mid2_anim')\n\nmc.parent('index_R' ,'R_index0_anim')\nmc.parent('index_R1' ,'R_index1_anim')\nmc.parent('index_R2' ,'R_index2_anim')\n\n\nmc.parent('thumb_R' ,'R_thumb1_anim')\nmc.parent('thumb_R1' ,'R_thumb2_anim')\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Opens the Python command listing in an HTML browser" 
+        -enableBackground 0
+        -align "center" 
+        -label "Python Command Reference" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconHelp.png" 
+        -image1 "menuIconHelp.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "showHelp DocsPythonCommands" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+} 
